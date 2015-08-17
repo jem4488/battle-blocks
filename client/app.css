@@ -1,0 +1,362 @@
+html, body, h1, h2, h3, h4, p, div, ul, ol, li, canvas {
+   padding: 0;
+   border: 0;
+   margin: 0;
+   font: inherit;
+   font-size: 100%;
+   font-family: "Helvetica Neue", Helvetica, sans-serif;
+   color: #ffffff;
+}
+
+body {
+   /*background-color: #999999;*/
+   /*background: #330066 url("background.png") top left no-repeat;*/
+   background: #333333 url("background3.png") top left no-repeat;
+   /*background-size: auto 800px;*/
+   background-size: contain;
+}
+
+h1 {
+   font-size: 36px;
+   font-weight: bold;
+   text-align: center;
+}
+h2 {
+   margin-top: 10px;
+   font-size: 26px;
+   font-weight: 100;
+   text-align: center;
+}
+
+h3 {
+   margin-top: 10px;
+   text-align: center;
+   font-weight: 50;
+   font-size: 20px;
+}
+
+div{
+   padding: 10px;
+}
+
+ul {
+   margin-top: 10px;
+}
+
+li {
+   display: inline-block;
+   padding-left: 10px;
+}
+
+canvas {
+   background-color: #ffffff;
+}
+
+button {
+   border-radius: 3px;
+   padding: 5px;
+}
+
+#main {
+   width: 80%;
+   min-width: 490px;
+   margin: 0 auto;
+}
+
+#main-play {
+   width: 600px;
+   margin: 0 auto;
+}
+
+#gameArea {
+   display: none;
+}
+
+#play {
+   display: block;
+   /*margin-left: 179px;*/
+   margin: 0 auto;
+   margin-top: 10px;
+}
+
+#battle {
+   /*margin-left: 43px;*/
+   text-align: center;
+}
+
+#holdPiece {
+   margin-bottom: 520px;
+   margin-left: 10px;
+
+}
+
+#piecePreview {
+   margin-bottom: 0px;
+   margin-left: -105px;
+
+}
+
+.won {
+   color: #00E600;
+}
+
+.lost {
+   color: red;
+}
+
+.selected {
+   background-color: #888888;
+   border: 2px solid #444444;
+}
+
+.robot-setup {
+   /*margin-left: 43px;*/
+   text-align: center;
+}
+
+.destination {
+   margin-top: 10px;
+   margin-left: 10px;
+   border: 1px solid #666666;
+   float: left;
+   width: 45%;
+   cursor: pointer;
+   background-color: #999999;
+   text-align: center;
+}
+
+.clear {
+   clear: both;
+   padding: 0px;
+}
+
+.center {
+   float: none;
+   margin: 10 auto;
+}
+
+input {   
+   display: block;
+   margin: 10 auto;
+}
+
+#login {
+   text-align: center;
+}
+#message {
+   height: 20px;
+}
+
+.list li {
+   display: block;
+   text-align: center;
+}
+
+#legend {
+   float: left;
+}
+
+#shardResources {
+   text-align: center;
+}
+
+#shardResources li {
+   margin: 5px;
+   display: inline-block;
+   height: 75px;
+   width: 75px;
+   border: 1px solid #666666;
+   border-radius: 5px;
+   padding: 0px;
+   line-height: 75px;
+   font-size: 20px;
+   font-weight: 900;   
+   background-color: #000000;
+   color: #aaaaaa;
+   cursor: pointer;
+}
+
+#gemResources {
+   text-align: center;
+   margin-bottom: 10px;
+}
+
+#gemResources li {
+   margin: 5px;
+   display: inline-block;
+   height: 75px;
+   width: 75px;
+   border: 1px solid #666666;
+   border-radius: 5px;
+   padding: 0px;
+   line-height: 75px;
+   background-color: #000000;
+   font-size: 20px;
+   font-weight: 900;   
+   color: #aaaaaa;
+   cursor: pointer;
+}
+
+#gemResources .selected {
+   border: 1px solid #ffffff;
+}
+
+#crystalResources {
+   text-align: center;
+}
+
+#crystalResources li {
+   margin: 5px;
+   display: inline-block;
+   height: 75px;
+   width: 75px;
+   /*border: 1px solid #666666;
+   border-radius: 5px;*/
+   padding: 0px;
+   line-height: 75px;
+   /*background-color: #000000;*/
+   font-size: 20px;
+   font-weight: 900;   
+   color: #aaaaaa;
+}
+
+.resourceHeading {
+   margin-top: 30px;
+   border-top: 1px solid #666666;
+   border-left: 1px solid #666666;
+   border-bottom: 1px solid #000000;
+   border-right: 1px solid #000000;
+   border-radius: 2px;
+   /*background-color: #222222;*/
+   background: linear-gradient(#333333 , #111111); /* Standard syntax */
+}
+
+#shardForgeSelections {
+   text-align: center;
+   margin-bottom: 10px;
+}
+
+.forgeItem {
+   font-size: 40px;
+   margin: 5px;
+   border: 1px solid #666666;
+   border-radius: 5px;
+   height: 100px;
+   width:  100px;
+}
+
+.plus {
+   font-size: 40px;
+   margin: 5px;
+   padding: 0px;
+}
+
+.forgeButton {
+   display: block;
+   margin: 0 auto;
+}
+
+.gemRecipe div{
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+}
+
+.description {
+   padding-top: 10px;
+   text-align: center;
+}
+
+#accumResources {
+   text-align: center;
+}
+
+#accumResources div {
+   border: 1px solid #666666;
+   height: 50px;
+   width: 50px;
+   text-align: right;
+   font-size: 15px;
+}
+
+#accumResources li{
+   margin: 5px;
+   display: inline-block;
+   /*height: 75px;
+   width: 75px;*/
+   /*border: 1px solid #666666;
+   border-radius: 5px;*/
+   padding: 0px;
+   /*line-height: 75px;*/
+   /*background-color: #000000;*/
+   font-size: 20px;
+   font-weight: 900;   
+   color: #aaaaaa;
+
+}
+
+#frameResources {
+   text-align: center;
+}
+
+#frameResources div {
+   border: 1px solid #666666;
+   height: 50px;
+   width: 50px;
+   text-align: right;
+   font-size: 15px;
+}
+
+#frameResources li{
+   margin: 5px;
+   display: inline-block;
+   /*height: 75px;
+   width: 75px;*/
+   /*border: 1px solid #666666;
+   border-radius: 5px;*/
+   padding: 0px;
+   /*line-height: 75px;*/
+   /*background-color: #000000;*/
+   font-size: 20px;
+   font-weight: 900;   
+   color: #aaaaaa;
+
+}
+
+.selectableResourceList {
+   text-align: center;
+}
+
+.selectableResourceList li {
+   margin: 5px;
+   display: inline-block;
+   height: 75px;
+   width: 75px;
+   border: 1px solid #666666;
+   border-radius: 5px;
+   padding: 0px;
+   line-height: 75px;
+   font-size: 20px;
+   font-weight: 900;   
+   background-color: #000000;
+   color: #aaaaaa;
+   cursor: pointer;
+}
+
+.selectableResourceList .selectedResource {
+   border: 1px solid #ffffff;
+}
+
+#army {
+   text-align: center;
+}
+
+#army li {
+   display: block;
+}
+
+#army li div {
+   height: 50px;
+   width: 50px;
+   display: inline-block;
+}

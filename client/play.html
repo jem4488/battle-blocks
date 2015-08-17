@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Battle Blocks</title>
+   <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+
+<body>
+   <div id="main-play">
+      <div id="tetris">
+         <h1>Let's Battle <em id="name"></em>!</h1>
+         <h2 id="message"></h2>
+         <div id="gameArea">
+            <canvas id="gameBoard" width="400" height="640" style="border:1px solid #000000;">
+               Sorry, your browser does not support this application.
+            </canvas>
+            <canvas id="holdPiece" width="100" height = "120" style="border:1px solid #000000;">
+            </canvas>
+            <canvas id="piecePreview" width="100" height="320" style="border:1px solid #000000;">
+            </canvas>
+         </div>
+               
+      </div>
+      <div id="battleSetup">
+         <h3 id="robotMessage"></h3>
+         <ul id="robotTypes" class="robot-setup">
+         </ul>
+         <ul id="robotColors" class="robot-setup">
+         </ul>
+      </div>
+      <div id="battle">
+         <canvas id="myBattleGrid" width="150" height="150" style="border:1px solid #000000;">
+         </canvas>
+         <canvas id="oppBattleGrid" width="150" height="150" style="border:1px solid #000000;">
+         </canvas>
+         <button id ="play" onclick="readyToStartGame()" disabled='true'>Ready</button>
+      </div>
+      <div id="scores">
+         <h2 id="opponentsLines"></h2>
+         <h2 id="linesCleared"></h2>
+         <h2>Accumulator points:</h2>
+         <ul>
+            <li>ID 0: <strong id="0Accum">0</strong></li>
+            <li>ID 1: <strong id="1Accum">0</strong></li>
+            <li>ID 2: <strong id="2Accum">0</strong></li>
+            <li>ID 3: <strong id="3Accum">0</strong></li>
+            <li>ID 4: <strong id="4Accum">0</strong></li>
+         </ul>
+         <h2>Last Attack: <strong id="attackPoints"></strong></h2>
+      </div>
+   </div>
+<script src="/jquery-2.1.4.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/app.js"></script>
+
+</body>
+</html>

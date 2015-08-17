@@ -1,0 +1,42 @@
+<html>
+<head>
+   <title>Battle Tetris</title>
+   <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+
+<body>
+   <div id='main'>
+      <h1>Welcome to the Citadel</h1>
+      <div id="money">
+         <h2>Collect your money!</h2>
+         <p>Your citadel has produced <span id='moneyAmount'></span> coins.</p>
+         <button id='collectMoney' class='forgeButton' onClick='collectMoney()' disabled>Collect</button>
+         <p></p>
+         <p>Your bank has <span id='bankCoins'></span> coins.</p>
+      </div>
+      <div>
+         <h2>Current Army</h2>
+         <ul id='army'>
+         </ul>
+      </div>
+      <div>
+         <h2>Construction</h2>
+         <h3 class='resourceHeading'>Frames</h3>
+         <ul id="frames" class='selectableResourceList'>
+         </ul>
+         <h3 class='resourceHeading'>Crystals</h3>
+         <ul id="crystals" class='selectableResourceList'>
+         </ul>
+         <h3 class='resourceHeading'>Accumulators</h3>
+         <ul id="accumulators" class='selectableResourceList'>
+         </ul>
+         <button id='constructRobot' class='forgeButton' onClick='constructRobot()' disabled >Construct</button>
+      </div>
+   </div>
+
+<script src="/jquery-2.1.4.min.js"></script>
+<script src="/underscore-min.js"></script>
+<script src="/global.js"></script>      
+<script src="/citadel.js"></script>      
+</body>
+</html>

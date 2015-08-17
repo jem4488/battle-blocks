@@ -1,0 +1,45 @@
+<html>
+<head>
+   <title>Battle Tetris</title>
+   <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+
+<body>
+   
+   <div id='main'>
+      <h1>Welcome to the Forge</h1>
+      <div id='resources'>
+         <h2 class='resourceHeading'>Shards</h2>
+         <div id='legend'>
+      <h2>Gem Recipes</h2>
+      <ul id='forgeRules' class='list'>
+      </ul>
+   </div>
+         <ul id='shardResources'>
+         </ul>
+         <ul id='shardForgeSelections'>
+            <li id='shard1' class='forgeItem'>&nbsp;</li>
+            <li class='plus'>+</li>
+            <li id='shard2' class='forgeItem'>&nbsp;</li>
+            <li class='plus'>+</li>
+            <li id='shard3' class='forgeItem'>&nbsp;</li>
+         </ul>
+         <button id='forgeGem' class='forgeButton' onClick='forgeGem()' disabled>Forge Gem</button>
+         <h2 class='resourceHeading clear'>Gems</h2>
+         <p class='description'>Combine three gems of the same color to produce a crystal of the same color.</p>
+         <ul id='gemResources'>
+         </ul>
+         <button id='forgeCrystal' class='forgeButton' onClick='forgeCrystal()' disabled>Forge Crystal</button>
+         <h2 class='resourceHeading'>Crystals</h2>
+         <ul id='crystalResources'>
+         </ul>
+      </div>
+   </div>
+
+
+<script src="/jquery-2.1.4.min.js"></script>
+<script src="/underscore-min.js"></script>
+<script src="/global.js"></script>
+<script src="/forge.js"></script>   
+</body>
+</html>

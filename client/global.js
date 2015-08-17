@@ -1,0 +1,1 @@
+var globalColorNameMapping = ['red', 'green', 'yellow', 'teal', 'blue', 'orange', 'purple'];
